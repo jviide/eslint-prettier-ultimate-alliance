@@ -10,6 +10,6 @@ An example repository for using ESLint and Prettier together. Features:
 
 - [Workspace settings for VSCode](./.vscode/settings.json): Sets Prettier-enabled ESLint as the formatter for JS/TS files, and Prettier as the default formatter for all others (e.g. JSON). The related VSCode extensions are marked as [recommended extensions](./vscode/extensions.json) for this workspace.
 
-**Note:** VSCode's "format on save" feature is also enabled.
+   **Note:** VSCode's "format on save" feature is also enabled.
 
 - A [devcontainer setup](https://code.visualstudio.com/docs/remote/containers) 'cause that's how I roll, friend. You don't have to use this, though.
