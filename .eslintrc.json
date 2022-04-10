@@ -1,0 +1,30 @@
+{
+  "root": true,
+  "extends": ["plugin:prettier/recommended"],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "env": {
+    "node": true
+  },
+  "rules": {
+    "prettier/prettier": "warn"
+    // eqeqeq: ["error", "smart"],
+  },
+  "overrides": [
+    {
+      "files": ["src/**/*.{ts,tsx}"],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        // This setting is required if you want to use rules which require type information
+        "project": "./tsconfig.json"
+      },
+      "extends": ["plugin:@typescript-eslint/recommended"],
+      // TypeScript-specific custom rule definitions go here
+      "rules": {
+        "@typescript-eslint/no-explicit-any": "off"
+      }
+    }
+  ]
+}
